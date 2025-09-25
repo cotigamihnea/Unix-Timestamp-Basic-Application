@@ -1,0 +1,53 @@
+1. timelib.c:
+Aici am dat define la numerele care sunt considerate magic numbers
+si am inceput cu o functie care verifica daca un numar este an bisect
+sau nu
+
+task1: la prima functie am luat timestampul si am luat restul impartirii la numarul de secunde
+dintr o zi, dupa am facut calculele necesqare pentru a extrage numarul de ore, minute si secunde si am returnat structura
+
+task2: la a 2 a functie am egalat anul, luna si ziua cu standardul unix, am luat un vector
+cu valorile echivalente cu numerele zilelor dintr o luna, dupa am facut adunari si scaderi
+repetate in while uri pentru fiecare variabila reprezentativa in functie de numarul de secunde
+de care are nevoie, implicit numarul de zile respectivei luni, returnand structura
+
+task3: la a 3 a functie am facut acelasi lucru, doar ca am inclus o verificare de an bisect, care mai
+adauga o zi la anii bisecti, iar daca anul este bisect si se ajunge la luna februarie, creste valoarea
+lunii din vector cu 1
+
+task4: la a 4 a functie m am ajutat de a 2 a si a 3 a functie sa fac conversia, adaugand un calcul de echivalare
+a diferentei la timestamp in functie de fusul orar cerut, returnand structura
+
+task5: la a 5 a functie am luat fiecare valoare din structura si, in functie de numarul de secunde
+pe care o are, am adaugat la o valoare "timp" si am scazut cate 1 punct pentru fiecare contribuire
+la variabila "timp" pe care a avut o, dupa am ajustat variabila in functie de fusul orar
+in care ni s a dat data si am returnat "timp"
+
+task6: la a 6 a functie am facut o afisare simpla, avand si un vector de stringuri cu numele lunilor ca sa le
+afisez in functie de valoarea numerica a lunii
+
+2. bitpacking.c:
+Aici am dat define la numerele pe care le am folosit. 
+
+In int main, am definit un vector de stringuri cu numele lunilor, un char care citeste numarul task ului cerut,
+un N care primeste numarul de numere de tip unsigned int si o structura in care introduc datele datilor.
+Am realizat o citire de variabila care verifica daca se citeste 7 sau 8 (in functie de task ul cerut) prin functia strcmp.
+ 
+task7: Am echivalat fiecare bit in functie de cat ocupau numerele pentru a defini
+datile prin parcurgerea bitilor, dupa am facut sortarea crescatoare a datelor in functie de an, luna si zi si
+am facut o afisare simpla pentru ele
+
+task8: n am facut nimic..
+
+3. planner.c
+task9: am incercat sa il rezolv, am incercat si cu alocare dinamica, cred ca am probleme la citire..
+totusi, o sa explic in mare ce am incercat sa fac: am facut si definit o structura pentru persoanele care urmeaza sa
+fie citite, am definit o structura pentru timezone urile citite, am citit variabilele/timezone urile/persoanele si datele lor
+care se cer, dupa am facut o conversie la timestampUnix in functie de fusul orar avut, ajutandu ma de functiile
+de la task urile anterioare, dupa am luat cel mai mic si cel mai mare timestamp si am facut un for care verifica in functie n de
+durata si valabilitatea persoanelor timestampul cel mai mic in care se satisface conditia minima de participanti la eveniment,
+dupa am creat afisarea lor in caz ca evenimentul se poate sustine, si am creat un mesaj care se afiseaza in caz ca
+evenimentul nu poate avea loc
+
+
+

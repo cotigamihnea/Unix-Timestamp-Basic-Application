@@ -37,8 +37,6 @@ task7: Am echivalat fiecare bit in functie de cat ocupau numerele pentru a defin
 datile prin parcurgerea bitilor, dupa am facut sortarea crescatoare a datelor in functie de an, luna si zi si
 am facut o afisare simpla pentru ele
 
-task8: n am facut nimic..
-
 3. planner.c
 task9: am incercat sa il rezolv, am incercat si cu alocare dinamica, cred ca am probleme la citire..
 totusi, o sa explic in mare ce am incercat sa fac: am facut si definit o structura pentru persoanele care urmeaza sa
@@ -48,6 +46,9 @@ de la task urile anterioare, dupa am luat cel mai mic si cel mai mare timestamp 
 durata si valabilitatea persoanelor timestampul cel mai mic in care se satisface conditia minima de participanti la eveniment,
 dupa am creat afisarea lor in caz ca evenimentul se poate sustine, si am creat un mesaj care se afiseaza in caz ca
 evenimentul nu poate avea loc
+
+proiect creat in ianuarie 2024
+
 
 
 

@@ -1,3 +1,5 @@
+# Unix-Timestamp-Basic-Application
+
 1. timelib.c:
 Aici am dat define la numerele care sunt considerate magic numbers
 si am inceput cu o functie care verifica daca un numar este an bisect
@@ -48,6 +50,7 @@ dupa am creat afisarea lor in caz ca evenimentul se poate sustine, si am creat u
 evenimentul nu poate avea loc
 
 proiect creat in ianuarie 2024
+
 
 
 
